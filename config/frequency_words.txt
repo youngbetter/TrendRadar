@@ -150,109 +150,105 @@
 [WORD_GROUPS]
 
 # ═══════════════════════════════════════════════════════════════
-#                         企业与品牌
+#                            股票/金融
 # ═══════════════════════════════════════════════════════════════
 
-/胖东来|于东来/ => 胖东来
+[A股]
+A股
+沪指
+深成指
+创业板
+科创板
+涨停
+跌停
 
-/深度求索|幻方量化|梁文锋|\bDeepSeek\b/ => DeepSeek
+[美股]
+美股
+纳斯达克
+标普500
+道琼斯
 
-/华为|任正非|余承东|鸿蒙|海思|昇腾|鲲鹏|\bHUAWEI\b|\bHarmonyOS\b|\bHiSilicon\b/ => 华为
+[港股]
+港股
+恒生指数
 
-/比亚迪|王传福|方程豹|腾势|仰望|弗迪|刀片电池|云辇|\bBYD\b|\bDenza\b|\bYangwang\b/ => 比亚迪
+[区块链]
+btc
+eth
+sol
+doge
+xrp
 
-/大疆|汪滔|灵眸|如影|\bDJI\b|\bRoboMaster\b|\bMavic\b|\bZenmuse\b/ => 大疆
-
-/宇树|王兴兴|\bUnitree\b/ => 宇树机器人
-
-/智元|灵犀|稚晖君|彭志辉|AgiBot/ => 智元机器人
-/众擎|EngineAI|赵同阳/ => 众擎机器人
-
-/黑神话|冯骥/ => 黑神话悟空
-
-/影之刃零|梁其伟/ => 影之刃零
-
-/三体|流浪地球|刘慈欣|郭帆/ => 三体/流浪地球
-
-申奥
-
-/京东|刘强东|\bJD\b|\bJingdong\b/ => 京东
-
-/字节|张一鸣|梁汝波|抖音|\bByteDance\b|\bTikTok\b|\bDouyin\b|\bLark\b|\bCapCut\b/ => 字节跳动
-
-/腾讯|鹅厂|马化腾|微信|QQ|天美|阅文集团|微众银行|\bTencent\b|\bPony Ma\b|\bWeChat\b|\bLightSpeed\b|\bWeBank\b/ => 腾讯
-
-/qwen|minimax|glm/ => 国产开源模型
-
-/特斯拉|马斯克|\bTesla\b|\bElon Musk\b|\bCybertruck\b|\bModel 3\b|\bModel Y\b|\bModel S\b|\bModel X\b|\bFSD\b/ => 特斯拉
-
-/英伟达|黄仁勋|\bNVIDIA\b|\bGeForce\b|\bRTX\b|\bCUDA\b|\bJensen Huang\b/ => 英伟达
-/苏姿丰|锐龙|霄龙|\bAMD\b|\bRyzen\b|\bEPYC\b|\bRadeon\b|\bLisa Su\b/ => AMD
-
-/微软|\bMicrosoft\b|\bWindows\b|\bAzure\b|\bSatya Nadella\b|\bCopilot\b/ => 微软
-/谷歌|皮查伊|安卓|油管|\bGoogle\b|\bAlphabet\b|\bAndroid\b|\bChrome\b|\bYouTube\b|\bGemini\b|\bDeepMind\b|\bWaymo\b/ => 谷歌
-/库克|\biPhone\b|\biPad\b|\bMacBook\b|\biOS\b|\bVision Pro\b|\bAirPods\b|\bApple\b|\bTim Cook\b/ => 苹果
-
-/\bOpenAI\b|\bChatGPT\b|\bSora\b|\bDALL-E\b|\bSam Altman\b|\bGreg Brockman\b/ => OpenAI
-/\bAnthropic\b|\bClaude\b|\bDario Amodei\b/ => Claude
+[金融热点]
+/牛市|熊市|暴涨|暴跌|崩盘|抄底/ => 行情异动
+/降息|加息|美联储|央行|LPR/ => 货币政策
+/IPO|上市|退市|减持|增持/ => 资本运作
 
 
 # ═══════════════════════════════════════════════════════════════
-#                         国家与地区
+#                            篮球
 # ═══════════════════════════════════════════════════════════════
 
-[中国]
-国产
-中国
+[NBA]
+/\bNBA\b/
+湖人
+勇士
+凯尔特人
+篮网
+热火
+独行侠
 
-[东亚]
-日本
-朝鲜
-韩国
+[NBA球星]
+/詹姆斯|LeBron/ => 詹姆斯
+/库里|Curry/ => 库里
+/东契奇|Doncic/ => 东契奇
+/杠兰特|KD/ => 杠兰特
+/字母哥|Giannis/ => 字母哥
+/恩比德|Embiid/ => 恩比德
+/约基奇|Jokic/ => 约基奇
 
-[北美]
-美国
-加拿大
+[CBA]
+CBA
+辽宁男篮
+广东男篮
+新疆男篮
 
-[西欧]
-法国
-英国
-
-/俄罗斯|俄国/ => 俄罗斯
-
-印度
+[中国篮球]
+中国男篮
+/姚明|郭艾伦|周琦|赵睡|曾凡博/ => 中国球员
 
 
 # ═══════════════════════════════════════════════════════════════
-#                         科技领域
+#                            AI 资讯
 # ═══════════════════════════════════════════════════════════════
 
-[AI 相关]
+[AI]
 /(?<![a-zA-Z])ai(?![a-zA-Z])/
 人工智能
+大模型
 
-[芯片]
-芯片
-光刻机
-半导体
+[大模型公司]
+/\bOpenAI\b|\bChatGPT\b|\bGPT-4\b|\bGPT-5\b|\bSora\b/ => OpenAI
+/\bAnthropic\b|\bClaude\b/ => Claude
+/\bDeepSeek\b|深度求索/ => DeepSeek
+/\bGemini\b|谷歌AI/ => Google AI
 
-/水电|雅鲁藏布江/ => 水电
-/光伏|太阳能/ => 光伏
-核能
-能源
+[国产大模型]
+/文心一言|百度AI/ => 文心一言
+/通义千问|\bQwen\b/ => 通义千问
+/豆包|字节AI/ => 豆包
+/智谱|\bGLM\b/ => 智谱
+/Kimi|月之暗面/ => Kimi
 
-/自动驾驶|无人驾驶|智驾/ => 自动驾驶
+[AI技术]
+/AGI|通用人工智能/ => AGI
+/LLM|大语言模型/ => LLM
+/Agent|智能体/ => AI Agent
+机器学习
+深度学习
+神经网络
 
-机器人
-/机械狗|四足/ => 机器狗
-具身智能
-
-/月球|登月|火星|宇宙|飞船|航天|空间站|卫星/ => 航天
-
-# 前沿科技
-量子
-脑机
-基因
-
-# 产业政策
-生产力
+[AI芯片]
+/英伟达|NVIDIA|黄仁勋/ => 英伟达
+/AMD|苏姿丰/ => AMD
+/算力|GPU/ => 算力
